@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #203a43;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  height: 70vh;
+  width: 40vw;
+  background-color: #1565c0;
+  border-radius: 5px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3), -5px -2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: antiquewhite;
+  height: 70%;
+  width: 70%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4), -3px -5px 10px rgba(0, 0, 0, 0.4);
+  animation: popup 0.5s linear forwards;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container #quotes {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  top: 30%;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 23px;
+  font-weight: bold;
+  color: #86a8e7;
+}
+
+.container #author {
+  position: absolute;
+  right: 20px;
+  bottom: 28%;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #86a8e7;
+}
+
+.container #next {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0px;
+  color: #fff;
+  background-color: #4286f4;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 16px;
+}
+
+.container #next:hover {
+  background-color: #2980b9;
+}
+
+.container #tweet {
+  position: absolute;
+  right: -10px;
+  top: -45px;
+  padding: 50px 15px;
+  font-size: 25px;
+  transform: rotate(-45deg);
+  background-color: #1565c0;
+  border: none;
+  box-shadow: 0px 0px 10px #4286f4;
+  cursor: pointer;
+}
+
+.container #tweet i {
+  transform: rotate(45deg);
+  color: antiquewhite;
+}
+
+.container .fa-quote-left {
+  position: absolute;
+  font-size: 3.5rem;
+  left: 30px;
+  top: 40px;
+  color: #86a8e7;
+}
